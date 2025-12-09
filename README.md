@@ -1,75 +1,55 @@
-# React + TypeScript + Vite
+# 🌍 India DRR Technical Project — Disaster Risk Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack style frontend application designed to visualize and manage disaster risk data for Indian districts. This project simulates a command-center interface for the National Disaster Management Authority (NDMA) or Ministry of Earth Sciences (MoES).
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **Interactive Geospatial Maps:** Custom Leaflet implementation with Choropleth layers to visualize risk levels across districts.
+*   **Real-time Data Simulation:** Simulates live data feeds for hazard scores, exposure levels, and risk fluctuation.
+*   **Analytical Dashboards:**
+    *   **Vulnerability Analysis:** Radar and Bar charts (Recharts) breaking down social and economic vulnerability.
+    *   **Hazard Layers:** Switchable views between Flood, Earthquake, Landslide, and Cyclone data.
+    *   **Risk Assessment:** Scatterplots and tables correlating exposure vs. risk.
+*   **Evacuation Planning:** Interactive module calculating optimal routes and evacuation times based on live variables.
+*   **Modern UI/UX:** Fully responsive, dark-mode technical aesthetic built with Tailwind CSS.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+*   **Core:** React 18, TypeScript, Vite
+*   **Styling:** Tailwind CSS
+*   **Visualization:** Leaflet (Maps), Recharts (Data Visualization)
+*   **State Management:** React Hooks
+*   **Icons:** Custom SVG Icon set
 
-Note: This will impact Vite dev & build performances.
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
+*(You should take screenshots of your running localhost app and paste them here)*
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Installation & Setup
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/yourusername/india-drr-dashboard.git
+    ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+4.  **Open in browser**
+    Visit `http://localhost:5173`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔮 Future Scope
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*   Integration with live API endpoints (IMD/USGS).
+*   User authentication for different administrative levels.
+*   PDF Report generation using `jspdf`.
+
+---
+*Developed as a technical showcase for modern React architecture and geospatial data handling.*
