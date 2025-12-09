@@ -1,8 +1,8 @@
-# 🌍 India DRR Technical Project — Disaster Risk Dashboard
+#  India DRR Technical Project — Disaster Risk Dashboard
 
 A full-stack style frontend application designed to visualize and manage disaster risk data for Indian districts. This project simulates a command-center interface for the National Disaster Management Authority (NDMA) or Ministry of Earth Sciences (MoES).
 
-## 🚀 Features
+##  Features :
 
 *   **Interactive Geospatial Maps:** Custom Leaflet implementation with Choropleth layers to visualize risk levels across districts.
 *   **Real-time Data Simulation:** Simulates live data feeds for hazard scores, exposure levels, and risk fluctuation.
@@ -13,7 +13,7 @@ A full-stack style frontend application designed to visualize and manage disaste
 *   **Evacuation Planning:** Interactive module calculating optimal routes and evacuation times based on live variables.
 *   **Modern UI/UX:** Fully responsive, dark-mode technical aesthetic built with Tailwind CSS.
 
-## 🛠️ Tech Stack
+##  Tech Stack:
 
 *   **Core:** React 18, TypeScript, Vite
 *   **Styling:** Tailwind CSS
@@ -21,11 +21,7 @@ A full-stack style frontend application designed to visualize and manage disaste
 *   **State Management:** React Hooks
 *   **Icons:** Custom SVG Icon set
 
-## 📸 Screenshots
-
-*(You should take screenshots of your running localhost app and paste them here)*
-
-## 📦 Installation & Setup
+##  Installation & Setup
 
 1.  **Clone the repository**
     ```bash
