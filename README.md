@@ -31,6 +31,7 @@ A full-stack style frontend application designed to visualize and manage disaste
 2.  **Install dependencies**
     ```bash
     npm install
+    npm install recharts
     ```
 
 3.  **Run the development server**
